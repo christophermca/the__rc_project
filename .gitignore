@@ -1,0 +1,2 @@
+opt/functions/_private/*
+!opt/functions/_private/README.md
