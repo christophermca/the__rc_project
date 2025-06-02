@@ -7,10 +7,10 @@
 ####
 
 # Includes sourceShellScript
-# [[ -f "$HOME/.__rc/bin/sourceShellScripts" ]] && source "$HOME/.__rc/bin/sourceShellScripts"
+[[ -f "$HOME/.__rc/bin/sourceShellScripts" ]] && source "$HOME/.__rc/bin/sourceShellScripts"
 
 # Create list of function names to load in shell
-list=()
+list=(colors)
 
-# sourceShellScripts "${list[*]}"
+sourceShellScripts "${list[*]}"
 
