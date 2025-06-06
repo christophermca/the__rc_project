@@ -43,3 +43,5 @@ will keep session consistant between login and interactive sessions.
 # This source `.bashrc` from `.bash_profile`
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 ```
+
+[Contributing](.github/CONTRIBUTING.md) to this Project.
