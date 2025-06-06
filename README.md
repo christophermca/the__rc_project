@@ -24,7 +24,6 @@ source `.__rc/.bashrc` inside of your `.bash_profile` or `.bashrc`
 # We source the __rc file
 [[ -f ~/.__rc/.bashrc ]] && source ~/.__rc/.bashrc
 ```
-
 ## Note
 
 By convention the system will use a **login shell** (`.bash_profile`/`.profile`/`.zprofile`) when a user is using a

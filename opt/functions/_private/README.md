@@ -1,1 +1,1 @@
-This folder will and README will be tracked, all other files with be ignored
+In this folder the repository will only track the README, all other files with be ignored
