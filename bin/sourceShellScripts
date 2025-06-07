@@ -3,7 +3,14 @@
 sourceShellScripts() {
   local DOT_RC_PATH="$HOME/.__rc"
 
-  [[ ! -d "$DOT_RC_PATH/opt/functions" ]] && echo "No functions directory found in $DOT_RC_PATH/opt"
+  # if no arguments to this fn; return
+  if [[ -z $1 ]]; then
+    echo "No arguments given to fn: sourceShellScripts
+    return 0
+  fi
+
+  [[ ! -d "$DOT_RC_PATH/opt/functions" ]] && echo "Cannot locate 'functions' directory at $DOT_RC_PATH/opt"
+
   for f in $1; do
     [[ -f $DOT_RC_PATH/opt/functions/$f ]] && source "$DOT_RC_PATH/opt/functions/$f"; done
 }
